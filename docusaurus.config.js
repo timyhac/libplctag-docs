@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/timyhac/libplctag-docs/',
+            'https://github.com/timyhac/libplctag-docs/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/timyhac/libplctag-docs/',
+            'https://github.com/timyhac/libplctag-docs/blob/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,10 +79,24 @@ const config = {
             label: 'Docs',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
+            label: 'Code',
             position: 'left',
-            label: 'API',
+            items: [
+              {
+                label: 'Github organization',
+                href: 'https://github.com/libplctag',
+              },
+              {
+                label: 'Releases',
+                href: 'https://github.com/libplctag/libplctag/releases',
+              },
+              {
+                label: 'Examples',
+                href: 'https://github.com/libplctag/libplctag/tree/release/src/examples',
+              },
+              // ... more items
+            ],
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -90,6 +104,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          
         ],
       },
       footer: {
