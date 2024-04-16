@@ -66,9 +66,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'libplctag',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'libplctag Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -103,15 +103,11 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/libplctag',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Google Groups',
+                href: 'https://groups.google.com/forum/#!forum/libplctag',
               },
             ],
           },
@@ -124,12 +120,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/libplctag/libplctag',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} libplctag. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
