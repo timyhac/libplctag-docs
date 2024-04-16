@@ -30,7 +30,7 @@ Tag handles are designed to be very long lived.   They can live weeks or months.
 
 Your program directly controls the lifetime of a handle.   It opens a handle to a PLC tag through the `plc_tag_create()` function and frees the resources used with the `plc_tag_destroy()` function.   All other resources are handled internally within the library.  The limit on tag handle IDs is on the order of several hundred million.  You will likely run into system constraints such as available memory, network bandwidth and CPU long before exhausting the internal limits of the library.
 
-The lowest level of access to a tag is via the `plc_tag_read()` and `plc_tag_write()` operations.   In most cases you must explicitly call these functions to write to the PLC or read from the PLC.   There are also attributes that can be passed when creating a tag handle to make it either automatically write to the PLC when the local copy of the tag is updated or read from the PLC periodically, or both.  See the wiki page on [auto sync tag string attributes](https://github.com/libplctag/libplctag/wiki/Tag-String-Attributes#auto-sync) for more information.
+The lowest level of access to a tag is via the `plc_tag_read()` and `plc_tag_write()` operations.   In most cases you must explicitly call these functions to write to the PLC or read from the PLC.   There are also attributes that can be passed when creating a tag handle to make it either automatically write to the PLC when the local copy of the tag is updated or read from the PLC periodically, or both.  See the wiki page on [auto sync tag string attributes](./Tag-String-Attributes/#optional-generic-auto-sync-attributes) for more information.
 
 ## Status Codes
 
@@ -145,7 +145,7 @@ int32_t plc_tag_create_ex(const char *attrib_str, void (*tag_callback_func)(int3
 
 **Returns** an integer handle to a tag in most cases.  If there was an error that prevented any creation of the tag at all (i.e. no memory), a negative value will be returned.  The value will be one of the above errors.
 
-The _attrib_str_ argument depends on the protocol type.  The caller is responsible for managing the memory of the attribute string.  For tag string options see the [Tag String Attributes](https://github.com/libplctag/libplctag/wiki/Tag-String-Attributes) wiki page.
+The _attrib_str_ argument depends on the protocol type.  The caller is responsible for managing the memory of the attribute string.  For tag string options see the [Tag String Attributes](./tag-string-attributes) wiki page.
 
 #### Example
 
