@@ -4,32 +4,31 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Simple',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Simple API with minimal use of language-specific data to enable easy wrapping in other languages.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Portable',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Pure C library for portability across Linux, Windows and macOS as well as 32-bit and 64-bit.
+        Support for x86, ARM and MIPS, and probably others.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Commercial-use friendly',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+         This code is dual licensed under the Mozilla Public License 2.0 (MPL 2.0)
+         or the GNU Lesser/Library General Public License 2 or later (LGPL 2+).
       </>
     ),
   },
