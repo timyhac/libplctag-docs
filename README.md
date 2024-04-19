@@ -1,6 +1,9 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository is a test of using Docusaurus, Github Pages and Github Actions to host a documentation site.
+As a test case it was set up to host a copy of the wiki for libplctag - the real/live/up-to-date version of that is hosted here: https://github.com/libplctag/libplctag/wiki
+
+What follows is the standard README content for a Docusaurus site:
 
 ### Installation
 
